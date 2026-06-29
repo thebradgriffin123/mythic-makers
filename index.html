@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythic Makers LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for modern icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sticky Top Header -->
+        <header class="top-header">
+            <div class="header-left">
+                <a href="#home" class="logo">
+                    <img src="assets/griffin_mascot.jpg" alt="Mythic Makers Mascot" class="logo-img" onerror="this.src='https://via.placeholder.com/40';">
+                    <span class="logo-text">Mythic Makers</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="top-nav desktop-nav">
+                    <a href="#home" class="nav-item active">Home</a>
+                    <a href="#brands" class="nav-item">Our Brands</a>
+                    <a href="#about" class="nav-item">About Us</a>
+                    <a href="#about" class="nav-item">Contact</a>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <div class="search-bar">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class='bx bx-bell'></i></button>
+                    <div class="user-avatar">
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <!-- Mobile Menu Button -->
+                    <button class="icon-btn mobile-menu-btn" id="menu-toggle">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#brands" class="nav-item">Our Brands</a>
+            <a href="#about" class="nav-item">About Us</a>
+            <a href="#about" class="nav-item">Contact</a>
+        </div>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Scrollable Content -->
+            <div class="content-scrollable">
+                
+                <!-- Home / Hero Section -->
+                <section id="home" class="hero-section">
+                    <div class="hero-card">
+                        <div class="hero-content">
+                            <span class="badge">Parent Company</span>
+                            <h1>Empowering Creators & Innovators</h1>
+                            <p>Mythic Makers LLC is the proud parent company behind some of your favorite brands, including Bootube, Batch It Crazy, and Sanpete Sweets.</p>
+                            <button class="btn-primary">Explore Our Brands</button>
+                        </div>
+                        <div class="hero-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Innovation" class="hero-img">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Category Pills -->
+                <div class="category-pills">
+                    <button class="pill active">All</button>
+                    <button class="pill">Entertainment</button>
+                    <button class="pill">Food & Beverage</button>
+                    <button class="pill">Health & Fitness</button>
+                </div>
+
+                <!-- Brands Grid Section -->
+                <section id="brands" class="brands-section">
+                    <h2 class="section-title">Our Brands</h2>
+                    <div class="grid-container">
+                        
+                        <!-- Brand Card 1 -->
+                        <article class="brand-card">
+                            <div class="card-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=500&q=80" alt="Bootube">
+                                <span class="duration-badge">Video Platform</span>
+                            </div>
+                            <div class="card-info">
+                                <div class="brand-avatar bg-red"><i class='bx bxl-youtube'></i></div>
+                                <div class="brand-details">
+                                    <h3 class="brand-title">Bootube</h3>
+                                    <p class="brand-meta">Mythic Makers LLC • Entertainment</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Brand Card 2 -->
+                        <article class="brand-card">
+                            <div class="card-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=500&q=80" alt="Batch It Crazy">
+                                <span class="duration-badge">Lifestyle</span>
+                            </div>
+                            <div class="card-info">
+                                <div class="brand-avatar bg-orange"><i class='bx bx-cake'></i></div>
+                                <div class="brand-details">
+                                    <h3 class="brand-title">Batch It Crazy</h3>
+                                    <p class="brand-meta">Mythic Makers LLC • Food & Baking</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Brand Card 3 -->
+                        <article class="brand-card">
+                            <div class="card-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&fit=crop&w=500&q=80" alt="Sanpete Sweets">
+                                <span class="duration-badge">Confectionery</span>
+                            </div>
+                            <div class="card-info">
+                                <div class="brand-avatar bg-pink"><i class='bx bx-store-alt'></i></div>
+                                <div class="brand-details">
+                                    <h3 class="brand-title">Sanpete Sweets</h3>
+                                    <p class="brand-meta">Mythic Makers LLC • Retail</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Brand Card 4 -->
+                        <article class="brand-card">
+                            <div class="card-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=80" alt="Mythic Fit">
+                                <span class="duration-badge">Fitness App</span>
+                            </div>
+                            <div class="card-info">
+                                <div class="brand-avatar bg-blue"><i class='bx bx-dumbbell'></i></div>
+                                <div class="brand-details">
+                                    <h3 class="brand-title">Mythic Fit</h3>
+                                    <p class="brand-meta">Mythic Makers LLC • Health & Wellness</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Corporate Info Section -->
+                <section id="about" class="corporate-section">
+                    <h2 class="section-title">Corporate Information</h2>
+                    <div class="corporate-grid">
+                        <div class="corp-card">
+                            <i class='bx bx-buildings'></i>
+                            <h3>About Mythic Makers</h3>
+                            <p>Founded with a vision to build and scale innovative brands across multiple verticals. We provide the operational foundation so our brands can focus on creating value for customers.</p>
+                        </div>
+                        <div class="corp-card">
+                            <i class='bx bx-map'></i>
+                            <h3>Headquarters</h3>
+                            <p>123 Innovation Drive<br>Suite 400<br>Salt Lake City, UT 84101</p>
+                        </div>
+                        <div class="corp-card">
+                            <i class='bx bx-shield-quarter'></i>
+                            <h3>Legal & Trust</h3>
+                            <p>As a registered LLC, we maintain the highest standards of corporate governance, transparency, and consumer protection across all our subsidiary brands.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
