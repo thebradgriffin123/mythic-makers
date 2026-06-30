@@ -372,7 +372,6 @@ body {
     position: relative;
     margin-bottom: 16px;
     box-shadow: var(--shadow-subtle);
-    container-type: inline-size;
 }
 
 .card-thumbnail img {
@@ -386,17 +385,17 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1280px;
-    height: 720px;
+    width: 400%;
+    height: 400%;
     border: none;
     pointer-events: none;
     transform-origin: top left;
-    transform: scale(calc(100cqi / 1280));
+    transform: scale(0.25);
     transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .brand-card:hover .preview-iframe {
-    transform: scale(calc((100cqi / 1280) * 1.05));
+    transform: scale(0.2625);
 }
 
 .brand-card:hover .card-thumbnail img {
