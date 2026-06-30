@@ -381,10 +381,6 @@ body {
     transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.card-thumbnail img.align-top {
-    object-position: top center;
-}
-
 .brand-card:hover .card-thumbnail img {
     transform: scale(1.05);
 }
